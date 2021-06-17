@@ -23,7 +23,7 @@ const TextBox = (props) => {                                       //component t
 
     props.onSaveSurveyData(surveyData);
     console.log("TextBox.js");
-    console.log(surveyData);                                       //debugging: shows that form data is passed to parent
+    console.log(surveyData);                                       //debugging: shows what form data is passed to parent
   };
 
   return (

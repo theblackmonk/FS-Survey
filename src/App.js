@@ -18,6 +18,7 @@ function App() {
   return (
     <div>
       <MainHeader />
+      <h1>QR code will link you directly to one of the above pages ^</h1>
       <main>
        <Route path="/socialcurrency"><SocialCurrency onAddSurveyData={addSurveyHandler} /></Route>
         <Route path="/reducetaxes"><ReduceTaxes onAddSurveyData={addSurveyHandler} /></Route>
