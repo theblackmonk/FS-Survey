@@ -6,6 +6,7 @@ import BigPicture from "./pages/BigPicture";
 
 import MainHeader from "./UI/MainHeader";
 import MainFooter from "./UI/MainFooter";
+import "./App.css";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
   return (
     <div>
       <MainHeader />
-      <h1>QR code will link you directly to one of the above pages ^</h1>
+      <p className="mainscreen">QR code will link you directly to one of the above pages ^</p>
       <main>
        <Route path="/socialcurrency"><SocialCurrency onAddSurveyData={addSurveyHandler} /></Route>
         <Route path="/reducetaxes"><ReduceTaxes onAddSurveyData={addSurveyHandler} /></Route>

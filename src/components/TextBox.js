@@ -13,6 +13,7 @@ const TextBox = (props) => {                                       //component t
     //form built in function to handle buttons
     event.preventDefault();                                       //stop a server request and page reload on button click
 
+    
     const surveyData = {                                          //form data saved here and passed to parent later 
       fullname: enteredName,
       rating: enteredRating,
@@ -24,6 +25,7 @@ const TextBox = (props) => {                                       //component t
     props.onSaveSurveyData(surveyData);
     console.log("TextBox.js");
     console.log(surveyData);                                       //debugging: shows what form data is passed to parent
+
   };
 
   return (
